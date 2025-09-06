@@ -9,27 +9,31 @@ const skills = [
   { name: "SQL", category: "Programming Languages" },
   { name: "R", category: "Programming Languages" },
 
-  // Backend
-  { name: "Node.js", category: "backend" },
-  { name: "Express", category: "backend" },
-  { name: "MongoDB", category: "backend" },
-  { name: "PostgreSQL", category: "backend" },
-  { name: "GraphQL", category: "backend" },
+  // AI & Machine Learning
+  { name: "Pytorch", category: "AI & Machine Learning" },
+  { name: "TensorFlow", category: "AI & Machine Learning" },
+  { name: "Scikit-learn", category: "AI & Machine Learning" },
+  { name: "OpenCV", category: "AI & Machine Learning" },
+  { name: "Transformers", category: "AI & Machine Learning" },
 
-  // Tools
+  // Tools & Databases
   { name: "Git/GitHub", category: "tools" },
   { name: "Docker", category: "tools" },
-  { name: "Figma", category: "tools" },
+  { name: "MySQL", category: "tools" },
   { name: "VS Code", category: "tools" },
+  { name: "Jupyter Notebooks", category: "tools" }
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+// Không còn "all"
+const categories = ["Programming Languages", "AI & Machine Learning", "tools"];
 
 export const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  // Mặc định chọn "Programming Languages"
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
 
+  // Không cần check "all" nữa
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => skill.category === activeCategory
   );
 
   return (
