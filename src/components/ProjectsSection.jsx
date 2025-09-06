@@ -3,12 +3,12 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Evolving a Genetic Algorithm for 2D Material Optimization",
+    description: "Engineered and implemented a Genetic Algorithm from scratch to dynamically solve the 2D cutting stock problem. The system includes custom mutation and crossover operators to improve convergence and minimize material waste.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Python", "gymnasm", "Optimization", "Algorithm Design"],
+    demoUrl: "https://github.com/shomin2155vn/MM241-Assignment/blob/main/student_submissions/s2352082_2352424_2352425_2352831_2352931/Genetic_Algorithm.gif",
+    githubUrl: "https://github.com/shomin2155vn/MM241-Assignment",
   },
   {
     id: 2,
