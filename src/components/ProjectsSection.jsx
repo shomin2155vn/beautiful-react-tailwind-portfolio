@@ -12,23 +12,23 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "STR FUll Pipeline",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "End-to-end pipeline for Scene Text Recognition (STR), combining YOLO for text detection and RCNN for text recognition.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Python", "YOLO", "RCNN", "Deep Learning"],
+    demoUrl: "https://github.com/shomin2155vn/STR-full-pipeline/blob/main/STR_full_pipeline.ipynb",
+    githubUrl: "https://github.com/shomin2155vn/STR-full-pipeline",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Receipt recognition",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Automated receipt recognition system using YOLO for receipt detection, DBNet for text detection, and SVTR for text recognition.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["Python", "YOLO", "DBNet", "SVTR", "OCR"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/HatakekkSheeshh/receipt-detection",
   },
 ];
 
